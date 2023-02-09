@@ -1,0 +1,42 @@
+<%-  include('../_layouts/adminheader') -%>
+
+    <h2 class="page-title ">Add a Page</h2>
+    <a href="/admin/pages" class="btn btn-primary">back to all pages</a>
+    <br><br>
+    
+    <form action="/admin/pages/add-page" method="post">
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="email" class="form-control" name="title" value="<%= title %>" placeholder="Title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">slug</label>
+            <input type="email" class="form-control" name="slug" value="<%= slug %>" placeholder="Slug">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+            <textarea class="form-control" name="content" rows="3" placeholder="content"><%= content %></textarea>
+          </div>
+
+          <!-- anjksdhjkahdjk -->
+          
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="email" class="form-control" name="title" value="<% title %>" placeholder="Title">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">slug</label>
+            <input type="email" class="form-control" name="slug" value="<% slug %>" placeholder="Slug">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+            <textarea class="form-control" name="content" rows="3" value="<% content %>" placeholder="content"></textarea>
+          </div>
+        <button class="btn btn-info">submit</button> -->
+
+    </form>
+
+
+
+<%-  include('../_layouts/adminfooter'); -%>
